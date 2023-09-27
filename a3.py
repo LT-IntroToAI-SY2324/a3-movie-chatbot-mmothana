@@ -38,6 +38,10 @@ def get_year(movie: Tuple[str, str, int, List[str]]) -> int:
 def get_actors(movie: Tuple[str, str, int, List[str]]) -> List[str]:
     return movie[3]
 
+# print(get_title(movie_db[1]))
+for movie in movie_db:
+    print(get_title(movie))
+
 
 # Below are a set of actions. Each takes a list argument and returns a list of answers
 # according to the action and the argument. It is important that each function returns a
@@ -54,7 +58,13 @@ def title_by_year(matches: List[str]) -> List[str]:
     Returns:
         a list of movie titles made in the passed in year
     """
-    pass
+    result = []
+    for movie in movie_db:
+        if int(matches[0]) == get_year(movie):
+            result.appened(get_title(movie))
+    # print(result)
+    return result
+
 
 
 def title_by_year_range(matches: List[str]) -> List[str]:
@@ -262,7 +272,7 @@ if __name__ == "__main__":
             "murray hamilton",
         ]
     ), "failed actors_by_title test"
-    assert sorted(actors_by_title(["movie not in database"])) == []), "failed actors_by_title not in database test"
+    assert sorted(actors_by_title(["movie not in database"])) == [], "failed actors_by_title not in database test"
     assert sorted(year_by_title(["jaws"])) == sorted(
         [1975]
     ), "failed year_by_title test"
