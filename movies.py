@@ -434,5 +434,18 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "delroy lindo",
             "spike lee",
         ],
+    ),
+    (
+        "21 Jump Street",
+        "Phil Lord",
+        2012,
+        [
+            "Holly Robinson Pete",
+            "Jonah Hill",
+            "Channing Hill",
+            "Brie Larson",
+            "Dave Franco", 
+            "Ice Cube",
+        ],
     )
 ]
