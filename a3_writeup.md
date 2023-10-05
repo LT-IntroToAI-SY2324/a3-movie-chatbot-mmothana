@@ -4,10 +4,10 @@ Assignment 3 is all about creating this natural language query system.  In order
 
 ## Reflection Questions
 1. In your own words describe the `search_pa_list` function.
-
+    I find the 'search_pa_list' interesting because of how you it connects to other functions. It organizes the code by only getting what the question asks for. 
 
 2. What movie did you add to the `movies.py` file?  What year was it made? Any specific reason you added that movie?
-
+    I added 21 Jump Street which was made in 2012. The reason I added this movie was because it is one of my favorite comedy movies.
 
 3. What pattern / action did you add to the paList data structure?  Why do you think that is a useful pattern / action?
 
